@@ -87,7 +87,11 @@ public class Parqueadero {
                         for(int j=0;j<parqueadero.length;j++){
                             if(parqueadero[i][j].equals("_")){
                                 String placa=JOptionPane.showInputDialog("Ingrese numero de placa: ");
+                                if(placa.equals(this.consultarAuto(placa))){
+                                    JOptionPane.showMessageDialog(null, "Ya hay un auto con ese numero de placa en el parqueadero.");
+                                }else{
                                 parqueadero[i][j]=placa;
+                                }
                                 break;
                             }
                         }
@@ -104,7 +108,11 @@ public class Parqueadero {
                         for(int j=0;j<parqueadero.length;j++){
                             if(parqueadero[i][j].equals("_")){
                                 String placa=JOptionPane.showInputDialog("Ingrese numero de placa: ");
+                                if(placa.equals(this.consultarAuto(placa))){
+                                    JOptionPane.showMessageDialog(null, "Ya hay un auto con ese numero de placa en el parqueadero.");
+                                }else{
                                 parqueadero[i][j]=placa;
+                                }
                                 ingresar=true;
                                 break;
                             }
@@ -123,11 +131,13 @@ public class Parqueadero {
     
     public String consultarAuto(String placa){
         String resultado="El auto buscado no se encuentra en el parqueadero";
+        int posicion=1;
         for(int i=0;i<parqueadero.length;i++){
             for(int j=0;j<parqueadero.length;j++){
                 if(parqueadero[i][j].equals(placa)){
-                    resultado=parqueadero[i][j];
+                    resultado="El auto con placas: " + parqueadero[i][j] + " se encuentra en el puesto " + posicion;
                 }
+                posicion+=1;
             }
         }
         return resultado;
