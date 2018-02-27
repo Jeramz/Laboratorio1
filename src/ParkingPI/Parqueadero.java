@@ -84,7 +84,7 @@ public class Parqueadero {
             case "carga":
                 if(this.hayEspacio(tipoAuto)){
                     for(int i=0;i<1;i++){
-                        for(int j=0;j<3;j++){
+                        for(int j=0;j<parqueadero.length;j++){
                             if(parqueadero[i][j].equals("_")){
                                 String placa=JOptionPane.showInputDialog("Ingrese numero de placa: ");
                                 parqueadero[i][j]=placa;
@@ -100,16 +100,13 @@ public class Parqueadero {
             case "pasajeros":
                 boolean ingresar=false;
                 if(this.hayEspacio(tipoAuto)){
-                    for(int i=0;i<parqueadero.length;i++){
+                    for(int i=1;i<parqueadero.length;i++){
                         for(int j=0;j<parqueadero.length;j++){
                             if(parqueadero[i][j].equals("_")){
-                                if(i==0 && j<3){  
-                                }else{
                                 String placa=JOptionPane.showInputDialog("Ingrese numero de placa: ");
                                 parqueadero[i][j]=placa;
                                 ingresar=true;
                                 break;
-                                }
                             }
                         }
                         if(ingresar){
@@ -121,6 +118,7 @@ public class Parqueadero {
                 }
                 break;
         }
+        this.addIngresados();
     }
     
     public String consultarAuto(String placa){
@@ -157,6 +155,7 @@ public class Parqueadero {
                 }
             }
         }
+        this.addRetirados();
         return resultado;
     }
     
