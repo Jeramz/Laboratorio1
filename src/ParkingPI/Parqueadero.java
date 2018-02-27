@@ -92,6 +92,7 @@ public class Parqueadero {
                                 }else{
                                 parqueadero[i][j]=placa;
                                 }
+                                this.addIngresados();
                                 break;
                             }
                         }
@@ -114,6 +115,7 @@ public class Parqueadero {
                                 parqueadero[i][j]=placa;
                                 }
                                 ingresar=true;
+                                this.addIngresados();
                                 break;
                             }
                         }
@@ -126,7 +128,6 @@ public class Parqueadero {
                 }
                 break;
         }
-        this.addIngresados();
     }
     
     public String consultarAuto(String placa){
