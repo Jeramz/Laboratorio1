@@ -203,7 +203,7 @@ public class Parqueadero {
         return totalPagar;
     }
     
-    //imprime la cantidad de autos han ingresado y salido del parqueadero en el dia, indica la cantidad de autos parqueados actualmente
+    //imprime la cantidad de autos que han ingresado y salido del parqueadero en el dia, indica la cantidad de autos parqueados actualmente
     // indica la cantidad de dinero recaudado por termino de parqueos.
     public String arqueoCaja(){
         String respuesta= "La cantidad de autos ingresados fue de: " + this.getIngresados() + "\n" +
