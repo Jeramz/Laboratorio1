@@ -1,7 +1,11 @@
 /*
-  Clase Parqueadero: Le asigna un valor aleatorio a cada posición de una matriz dada, 
-  imprime una matriz ingresada, realiza la multiplicación entre dos matrices ingresadas,
-  realiza la suma entre dos matrices ingresadas, realiza la transpuesta de una matriz dada.
+  Clase Parqueadero: asigna valores a la cantidad de autos ingresados, retirados, parqueados y 
+  cantidad de dinero por cuestion de parqueos y los retorna. Indica si hay espacio en el parqueadero
+  para el tipo de auto dado, ingresa un auto dado en el parqueadero, consulta si un auto dado se encuentra
+  dentro del parqueadero, muestra de una forma visual el parqueadero, retira un auto dado del parqueadero,
+  calcula la cantidad de dinero a pagar, segun la cantidad de horas que haya pasado un auto en el parqueadero
+  indica cuantos autos han ingresado, salido y cuanto dinero se ha recaudado al final del dia por cuestion de 
+  parqueos, tambien retorna cuantos autos se encuentran parqueados actualmente.
 
   Autor: Jesus Ramirez-1731388  Samuel Velasco-1731295 Andrés Felipe-1730534
   email: jesus.zuluaga@correounivalle.edu.co - samuel.velasco@correounivalle.edu.co
@@ -199,7 +203,7 @@ public class Parqueadero {
         return totalPagar;
     }
     
-    //imprime la cuenta de cuantos autos han ingresado y salido del parqueadero en el dia, indica la cantidad de autos parqueados actualmente
+    //imprime la cantidad de autos han ingresado y salido del parqueadero en el dia, indica la cantidad de autos parqueados actualmente
     // indica la cantidad de dinero recaudado por termino de parqueos.
     public String arqueoCaja(){
         String respuesta= "La cantidad de autos ingresados fue de: " + this.getIngresados() + "\n" +
