@@ -3,9 +3,9 @@
   numero de equipo ingresado, cancela un turno en el numero de equipo ingresado, permite 
   conocer el numero de computadores asignados y el numero de computadores libres
 
-  Autor: Jesus Ramirez-1731388  Samuel Velasco-1731295 Andrés Felipe-
+  Autor: Jesus Ramirez-1731388  Samuel Velasco-1731295 Andrés Felipe-1730534
   email: jesus.zuluaga@correounivalle.edu.co - samuel.velasco@correounivalle.edu.co
-  fecha: 17 febrero 2018
+  fecha: 27 febrero 2018
  */
 package SalaComputadores;
 

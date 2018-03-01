@@ -1,21 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+  Clase Usuario: Menú para el usuario
+
+  Autor: Jesus Ramirez-1731388  Samuel Velasco-1731295 Andrés Felipe-1730534
+  email: jesus.zuluaga@correounivalle.edu.co - samuel.velasco@correounivalle.edu.co
+  fecha: 27 febrero 2018
  */
 package SalaComputadores;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Jesús Ramírez
- */
 public class Usuario {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         
         int estado; 
